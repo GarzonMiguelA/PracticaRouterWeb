@@ -1,13 +1,7 @@
 <script setup>
-    import {useRoute} from 'vue-router'
-    import data from '@/assets/data.json'
-
-
+    import DestinosComponent from '@/components/destinosComponent.vue';
 </script>
 
 <template>
-    <h1>Brazil</h1>
-    <div v-for="(item, index) in data" :key="index">
-        
-    </div>
+    <DestinosComponent/>
 </template>

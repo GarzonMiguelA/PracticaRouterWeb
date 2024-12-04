@@ -6,7 +6,8 @@ import './assets/main.css'
 </script>
 
 <template>
-    <nav id="nav">
+    <header>
+        <nav id="nav">
         <ul>
             <RouterLink to="/">Home</RouterLink>     
             <RouterLink v-for="(country, index) in data.destinations" :key="index" :to="'/Todos/'+country.id">
@@ -14,11 +15,13 @@ import './assets/main.css'
             </RouterLink>
         </ul>
     </nav>
+    </header>
+    
 
     <div class="container">
         <RouterView/>
     </div>
 
-
+    
 </template>
 
