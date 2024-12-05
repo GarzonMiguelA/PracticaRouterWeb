@@ -4,7 +4,7 @@ import data from '@/assets/data.json';
 
 const route = useRoute();
 
-// Obtén el ID del destino y el slug de la experiencia desde la URL
+// Obt el ID del destino y el slug de la experiencia desde la URL
 const destinationId = parseInt(route.params.id) - 1;
 const experienceSlug = route.params.experienceSlug;
 
@@ -25,4 +25,6 @@ const experience = data.destinations[destinationId].experiences.find(
             <p>{{ experience.description }}</p>
         </div>
     </div>
+
+    
 </template>

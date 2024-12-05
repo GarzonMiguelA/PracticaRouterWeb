@@ -1,5 +1,6 @@
 <script setup>
     import ExperiencesComponent from '@/components/experiencesComponent.vue';
+import ExperiencesComponent from '@/components/experiencesComponent.vue';
 </script>
 
 <template>
