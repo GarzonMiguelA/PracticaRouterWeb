@@ -39,6 +39,7 @@
                     <RouterLink :to="`/Todos/${route.params.id}/experiences/${experience.slug}`">
                         {{ experience.name }}
                     </RouterLink>
+                    
                 </div>
             </div>
         </div>
