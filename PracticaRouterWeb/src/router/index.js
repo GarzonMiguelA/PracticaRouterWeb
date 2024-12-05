@@ -18,13 +18,20 @@ const router = createRouter({
       component: DestinosView,
       children: [
         {
-          path: '/Todos/experiencesComponent',
-          name: 'DestinosView',
+          path: '',
+          name: 'DestinosComponent',
           component: DestinosComponent,
-        }
+        },
+        {
+          path: 'experiences/:experienceSlug',
+          name: 'ExperienceDetail',
+          component: ExperiencesComponent,
+        },
+        
       ]
+      
       /* component: () => import('../views/DestinosView.vue') */
-    },
+    }
   ],
 })
 

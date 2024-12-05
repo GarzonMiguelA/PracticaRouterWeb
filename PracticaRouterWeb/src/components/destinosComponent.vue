@@ -36,12 +36,9 @@
             <div class="card" v-for="(experience, index) in data.destinations[id].experiences" :key = "index">
                 <img :src="imgPath + experience.image">
                 <div class="card__text">
-                    <p>{{ experience.name }}</p>
-
-
-                <!--<RouterLink v-for="(experience, index) in data.destinations[id].experiences" :key="index" :to="'/Todos/'+experience.">
+                    <RouterLink :to="`/Todos/${route.params.id}/experiences/${experience.slug}`">
                         {{ experience.name }}
-                    </RouterLink> -->
+                    </RouterLink>
                 </div>
             </div>
         </div>
