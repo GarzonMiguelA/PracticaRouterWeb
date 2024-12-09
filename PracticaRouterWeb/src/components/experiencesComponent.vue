@@ -17,7 +17,7 @@ const experience = data.destinations[destinationId].experiences.find(
 <template>
     <div>
         <button>
-            <RouterLink to="/">Return to home</RouterLink>
+            <RouterLink :to="`/Todos/${route.params.id}`">Return to destination</RouterLink>
         </button>
         <h1>{{ experience.name }}</h1>
         <div class="experience-details">
@@ -25,6 +25,4 @@ const experience = data.destinations[destinationId].experiences.find(
             <p>{{ experience.description }}</p>
         </div>
     </div>
-
-    
 </template>
