@@ -1,10 +1,9 @@
 <script setup>
-    import ExperiencesComponent from '@/components/experiencesComponent.vue';
-import ExperiencesComponent from '@/components/experiencesComponent.vue';
+  import ExperiencesComponent from '@/components/experiencesComponent.vue';
 </script>
 
 <template>
     <div>
-      <router-view></router-view>
+      <ExperiencesComponent /> <!-- Llamamos al componente, aun que sea insignificante en este caso -->
     </div>
 </template>

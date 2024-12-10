@@ -9,6 +9,8 @@ import './assets/main.css'
     <header>
         <nav id="nav">
         <ul>
+            <!-- En ete caso marcamos con dos routerLink, uno para la home -->
+             <!-- El siguiente router link hacemos uso de for para mostrar todos los nombres en el nav -->
             <RouterLink to="/">Home</RouterLink>     
             <RouterLink v-for="(country, index) in data.destinations" :key="index" :to="'/Todos/'+country.id">
                 {{ country.name }}
@@ -19,6 +21,7 @@ import './assets/main.css'
     
 
     <div class="container">
+        <!-- Por ultimo mostramos: -->
         <RouterView/>
     </div>
 

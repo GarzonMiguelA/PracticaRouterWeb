@@ -4,7 +4,7 @@
 
 <template>
   <div>
-    <DestinosComponent />
-    <RouterView />
+    <DestinosComponent /><!-- Llamamos al componente para mostrar todos los destinos -->
+    <RouterView/><!-- Importante llamar cuando se acabe componente a router-view, ya que si no, nos quedamos sin poder ver destinos -->
   </div>
 </template>

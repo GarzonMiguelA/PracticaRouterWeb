@@ -1,6 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import DestinosComponent from '@/components/destinosComponent.vue';
 import ExperiencesComponent from '@/components/experiencesComponent.vue';
 import DestinosView from '../views/DestinosView.vue';
 
